@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation In HTML</title>
+</head>
+<body>
+    <form action="/" method="get">
+        <label for="topic">Topic: </label>
+        <select id="topic">
+            <option>HTML</option>
+            <option>CSS </option>
+        </select><br><br>
+        <label for="msg">Message: </label>
+        <textarea id="msg" name="message" required></textarea><br><br>
+        <label for="mbn">Phone No: </label>
+        <input type="number" id="mbn" pattern="[0-9] {10}" required><br><br>
+        <input type="checkbox" required>I agree <br><br>
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
